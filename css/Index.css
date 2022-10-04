@@ -113,10 +113,20 @@ body {
       -o-background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     color: #fff;
 }
       
+@supports ( -webkit-touch-callout : none) {
+  .header {
+  background-attachment:scroll
+  }
+  }
+  
+  @supports not ( -webkit-touch-callout : none) {
+  .header {
+  background-attachment: fixed;
+  }
+  }
 
 
 .header .header-content{
