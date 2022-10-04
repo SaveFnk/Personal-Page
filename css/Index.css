@@ -61,7 +61,7 @@ html,body {
 
 body {
     min-width:310px;
-    background-color: var(--background-dark);
+    background-color:  rgb(21, 21, 21);
 }
 
 .section{
@@ -100,19 +100,23 @@ body {
     color: var(--prime-blue) ;
 }
 
-.header {
+.header{
     position: relative;
     height: 84vh;
     width: 100%;
+    max-width: 100%;
     min-height: 330px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Landescape2.png);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Landescape2.png);
-    background-size: cover;
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
 }
+      
 
 
 .header .header-content{
