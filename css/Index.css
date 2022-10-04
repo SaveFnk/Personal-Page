@@ -89,7 +89,7 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 180px;
+    max-width: 200px;
 }
 .social-icons .social-link {
     font-size: 24px;
@@ -103,7 +103,8 @@ body {
 .header {
     position: relative;
     height: 84vh;
-    min-height: 400px;
+    width: 100%;
+    min-height: 330px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Landescape2.png);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Landescape2.png);
     background-size: cover;
@@ -313,6 +314,21 @@ body {
 
  @media only screen and (max-device-width: 480px) {
 
+  .header .header-content .header-subtitle {
+    /*font-size: calc(23px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));*/
+    font-size: 6.5vw;
+  }
+
+  .header .header-content .header-title {
+    line-height: .88;
+    font-size: 15vw;
+  }
+
+  .header .header-content .header-mono {
+    /*font-size: calc(14px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));*/
+    font-size: 4.7vw;
+  }
+
   .header{
     background-attachment:scroll;
    }
@@ -344,6 +360,10 @@ body {
 
   .about-card{
     margin: 2vw 7vw;
+  }
+
+  .about-card .cont{
+    padding: 25px;
   }
 
   .container h2 {

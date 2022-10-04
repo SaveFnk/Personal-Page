@@ -3,6 +3,7 @@ $(document).ready(function(){
 
   //fix height for safari
   $('header').height($(window).height()*0.84);
+  $('header').width($(window).width());
 
   let ab = document.getElementById("about");
 
@@ -20,14 +21,17 @@ $(document).ready(function(){
         // Make sure this.hash has a value before overriding default behavior
 
         console.log(this.hash);
-        if (this.hash === "#navbar") {
+        if (this.hash === "#menu") {
+          event.preventDefault();
 
-          if(window.scrollY <=70){
-            console.log(window.scrollY);
-            window.scrollTo(window.scrollX, window.scrollY + 100);
+          if(window.scrollY <=70 ){
+             console.log(window.scrollY);
+              window.scrollTo(window.scrollX, window.scrollY + 100);
           }
+          
 
         } else if (this.hash !== "") {
+          console.log("no menu");
           // Prevent default anchor click behavior
           event.preventDefault();
 
@@ -44,7 +48,6 @@ $(document).ready(function(){
             window.location.hash = hash;
           });
      }// End if
-
   });
 
   var Hstart = 0;
