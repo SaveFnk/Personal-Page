@@ -108,9 +108,9 @@ body {
     min-height: 330px;
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Landescape2.png);
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Landescape2.png);
-    -webkit-background-size: cover;
+    /*-webkit-background-size: cover;
       -moz-background-size: cover;
-      -o-background-size: cover;
+      -o-background-size: cover;*/
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;

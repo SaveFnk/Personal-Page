@@ -2,8 +2,8 @@
 $(document).ready(function(){
 
   //fix height for safari
-  $('header').height($(window).height()*0.84);
-  $('header').width($(window).width());
+  //$('header').height($(window).height()*0.84);
+  //$('header').width($(window).width());
 
   let ab = document.getElementById("about");
 
